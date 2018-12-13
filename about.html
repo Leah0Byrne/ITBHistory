@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+	<link rel="icon" href="imgs/icon1.jpg">
+<title>Home</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	
+	<header id="Home">
+		<img src="imgs/itb_logo.gif" alt="logo" id="logo">
+			<h1>History of ITB</h1>
+		<div class="fixednavbar" id="navbar">
+			<a href="index.html">Home  &nbsp;|</a>
+			<a href="about.html">About  &nbsp;|</a>
+				<div class="dropdown">
+  <div class="dropbtn"><a href="histroy.html">History  &nbsp;|</a></div>
+  <div class="dropdown-content">
+    <a href="local.html">Local</a>
+    <a href="itb.html">ITB History</a>
+  </div>
+</div>
+			<div class="dropdown">
+  <div class="dropbtn"><a href="ecology.html">Ecology  &nbsp;|</a></div>
+  <div class="dropdown-content">
+    <a href="lecture.html">Lecture</a>
+    <a href="student.html">Student</a>
+  </div>
+</div>
+			<a href="student-work.html">Student work &nbsp;|</a>
+	 	</div>
+	</header>
+		
+		<div class="container">
+			<div class="slideshow-container">
+
+<div class="mySlides">
+  <div class="numbertext">1 / 3</div>
+  <img src="imgs/car1.jpg" style="width:80%" alt="Landscape 1">
+  <div class="text">Building Site 1</div>
+</div>
+
+<div class="mySlides">
+  <div class="numbertext">2 / 3</div>
+  <img src="imgs/car2.jpg" style="width:80%" alt="Landsape 2">
+  <div class="text">Building Site 2</div>
+</div>
+
+<div class="mySlides">
+  <div class="numbertext">3 / 3</div>
+  <img src="imgs/car3.jpg" style="width:80%" alt="Landscape 3">
+  <div class="text">Building Site 3</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+	
+	
+	<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+			<div class="graph">
+			<h1>Mission Statement</h1>
+				<p>Our mission is to help preserve the memories of ITB as it will become TU4D. This site will be a commeration of what the site is about. We plan to express and show how ITB came to be, how the college developed from the past, the history of the area srounding the college and to show how important the enviroment is srounding the college and the other sroundings.</p>
+			</div>
+			
+	</div>
+
+	
+<a href="sitemap.html">Sitemap</a>	
+	<footer id="fixfeet">&#169; Copyright Leah O, Byrne 2018</footer>
+</body>
+</html>
